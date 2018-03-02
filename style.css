@@ -1,0 +1,42 @@
+#parent{
+  display: flex;
+}
+
+#aside{
+  flex: 1;
+  background-color: lightBlue;
+  padding: 10px;
+}
+
+#article{
+  flex: 3;
+  background-color: salmon;
+  padding: 20px;
+}
+
+.animal_grid{
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 50px 50px;
+}
+
+.grid_item{
+    grid-row: auto;
+    grid-column: auto;
+    max-width: 100%;
+    padding: 20px;
+    background-color: azure;
+}
+
+img{
+    max-width: 100%;
+    max-height: auto;
+}
+
+th, td{
+  padding: 5px;
+}
+
+footer{
+  background-color: lightGreen;
+}

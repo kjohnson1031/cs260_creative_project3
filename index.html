@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Favorite Animals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  </head>
+  <body>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Favorite Animals
+      </h1>
+      <p class="subtitle">
+        Vote for your favorite animal!
+      </p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container" id="parent">
+      <aside id="aside">
+        <h2>Current Voting Results:</h2>
+        <table>
+          <tr>
+            <th>Animal</th>
+            <th>Votes</th>
+          </tr>
+          <tr>
+            <td>Tiger</td>
+            <td>{{tigerVotes}}</td>
+          </tr>
+          <tr>
+            <td>Lion</td>
+            <td>{{lionVotes}}</td>
+          </tr>
+          <tr>
+            <td>Duck</td>
+            <td>{{duckVotes}}</td>
+          </tr>
+          <tr>
+            <td>Peacock</td>
+            <td>{{peacockVotes}}</td>
+          </tr>
+          <tr>
+            <td>Dog</td>
+            <td>{{dogVotes}}</td>
+          </tr>
+          <tr>
+            <td>Elephant</td>
+            <td>{{elephantVotes}}</td>
+          </tr>
+          <tr>
+            <td>Dolphin</td>
+            <td>{{dolphinVotes}}</td>
+          </tr>
+        </table>
+      </aside>
+      <article id="article">
+        <h2>Click on your favorite animal:</h2>
+          <div class="animal_grid">
+            <div class="grid_item" v-on:click="tigerClicked">
+              <img src="https://images.pexels.com/photos/145939/pexels-photo-145939.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"
+              alt="Tiger">
+            </div>
+            <div class="grid_item" v-on:click="lionClicked">
+              <img src="https://images.pexels.com/photos/247502/pexels-photo-247502.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"
+              alt="Lion">
+            </div>
+            <div class="grid_item" v-on:click="duckClicked">
+              <img src="https://images.pexels.com/photos/162140/duckling-birds-yellow-fluffy-162140.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"
+              alt="Duck">
+            </div>
+            <div class="grid_item" v-on:click="peacockClicked">
+              <img src="https://images.pexels.com/photos/45911/peacock-plumage-bird-peafowl-45911.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"
+              alt="Peacock">
+            </div>
+            <div class="grid_item" v-on:click="dogClicked">
+              <img src="https://images.pexels.com/photos/460823/pexels-photo-460823.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"
+              alt="Dog">
+            </div>
+            <div class="grid_item" v-on:click="elephantClicked">
+              <img src="https://images.pexels.com/photos/70080/elephant-africa-african-elephant-kenya-70080.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"
+              alt="Elephant">
+            </div>
+            <div class="grid_item" v-on:click="dolphinClicked">
+              <img src="https://images.pexels.com/photos/225869/pexels-photo-225869.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"
+              alt="Dolphin">
+            </div>
+          </div>
+      </article>
+    </div>
+  </section>
+  <a href="https://github.com/kjohnson1031/cs260_creative_project3"><footer>
+    <p>
+      Click here to visit the github repository!</p>
+  </footer>
+</a>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+  <script src="script.js"></script>
+  </body>
+</html>
